@@ -59,7 +59,7 @@ class QueryEngine extends BaseEngine {
 
     public function count()
     {
-        return $this->options['counter'];
+        return count($this->collection->toArray());
     }
 
     public function totalCount()
